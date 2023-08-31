@@ -1,0 +1,129 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  overflow: hidden;
+}
+
+.tab {
+  padding: 18px 40px;
+  cursor: pointer;
+  border: none;
+  flex: 0 0 auto;
+  border: 1px solid white;
+  background-color: #002c5f;
+  width: 10%;
+  color: #f2f2f2;
+
+  height: 50px;
+  text-align: center;
+}
+
+.tab.active {
+  background-color: #f2f2f2;
+  border-color: #ccc;
+  color: #002c5f;
+}
+
+/* CSS */
+.tab-content {
+  display: none;
+}
+
+.car-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25%;
+  margin-left: 1%;
+}
+
+.car-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center !important; */
+  justify-content: space-between;
+  gap: 9%;
+  row-gap: 100px;
+  width: 80%;
+}
+
+@media screen and (max-width: 1199px) {
+  .tabs {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .tab {
+    padding: 12px 20px;
+    font-size: 12px;
+    width: 5%;
+    height: 40px;
+  }
+
+  .car-container {
+    flex-direction: row;
+    gap: 2%;
+    display: flex;
+  }
+
+  .car-info {
+    margin: 0;
+  }
+
+  /* .tab-content.active {
+    flex-direction: column;
+    width: 90%;
+    gap: 15px;
+    row-gap: 50px;
+  } */
+
+  .tab-content.active {
+    width: 100%;
+    row-gap: 0%;
+    justify-content: center;
+  }
+  .box {
+    width: 33.33%;
+  }
+  .car-container {
+    width: 40%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+  .tab-content.active {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6.75%;
+    row-gap: 100px;
+  }
+
+  .car-container {
+    flex-direction: row;
+    width: 80%;
+    margin-left: -1%;
+    justify-content: space-between;
+    gap: 5%;
+  }
+
+  .box {
+    width: 15%;
+  }
+}

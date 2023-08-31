@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <center>
+    <div class="tabs">
+      <div class="tab active" onclick="changeTab(0)">ALL</div>
+      <div class="tab" onclick="changeTab(1)">Sedan</div>
+      <div class="tab" onclick="changeTab(2)">SUV</div>
+      <div class="tab" onclick="changeTab(3)">MPV/VAN</div>
+      <div class="tab" onclick="changeTab(4)">Commercial</div>
+
+    </div>
+  </center>
+
+
+  <!--ACTIVE TAB "ALL IMAGES"-->
+  <center>
+    <div class="tab-content active" id="ALL">
+      <div class="box">
+        <a href="https://www.hyundai-nishat.com/elantra/"><img src="assets/elantra-mega-img.webp" alt="Image 1"></a>
+        <p><b>ELANTRA</b>
+          <br> FromPKR 6,599,000 /-
+        </p>
+      </div>
+      <div class="box">
+        <a href="https://www.hyundai-nishat.com/sonata/"><img src="assets/sonata-mega-img.webp" alt="Image 1"></a>
+        <p>
+          <b>SONATA</b> <br>
+          FromPKR 10,329,000 /-
+        </p>
+      </div>
+      <div class="box">
+        <a href="https://www.hyundai-nishat.com/tucson/"><img src="assets/tucson-mega-img.webp" alt="Image 2"></a>
+        <p><b>TUSCON</b> <br>
+          FromPKR 7,365,000 /-</p>
+      </div>
+      <div class="box">
+        <a href="https://www.hyundai-nishat.com/staria/"><img src="assets/staria-mega-img.webp" alt="Image 3"></a>
+        <p><b>STARIA</b> <br>
+          FromPKR 8,364,000 /-
+        </p>
+      </div>
+      <div class="box">
+        <a href="https://www.hyundai-nishat.com/h100/"><img src="assets/porter-mega-img.webp" alt="Image 4"></a>
+        <p><b>PORTERH-100 </b> <br>
+          FromPKR 3,789,000 /-</p>
+      </div>
+    </div>
+
+  </center>
+
+
+
+
+  <!--...........TAB 1 Images..................-->
+
+
+  <center>
+    <div class="tab-content" id="tab1">
+      <div class="car-container">
+        <div class="car-info">
+          <a href="https://www.hyundai-nishat.com/elantra/"><img src="assets/elantra-mega-img.webp" alt="Image 2"></a>
+          <p><b>ELANTRA</b><br> FromPKR 6,599,000 /-</p>
+        </div>
+
+        <div class="car-info">
+          <a href="https://www.hyundai-nishat.com/sonata/"><img src="assets/sonata-mega-img.webp" alt="Image 2"></a>
+          <p><b>SONATA</b><br> FromPKR 10,329,000 /-</p>
+        </div>
+      </div>
+    </div>
+  </center>
+
+
+  <!--...................TAB 2 Images................-->
+  <center>
+    <div class="tab-content" id="tab2">
+      <div class="car-info">
+        <a href="https://www.hyundai-nishat.com/tucson/"><img src="assets/tucson-mega-img.webp" alt="Image 3"></a>
+        <p><b>TUSCON</b> <br>
+          FromPKR 7,365,000 /-</p>
+      </div>
+    </div>
+  </center>
+
+
+
+
+  <!--.............TAB 3 Images................-->
+
+  <center>
+
+    <div class="tab-content" id="tab3">
+      <div class="car-info">
+        <a href="https://www.hyundai-nishat.com/staria/"><img src="assets/staria-mega-img.webp" alt="Image 4"></a>
+        <p><b>STARIA</b> <br>
+          FromPKR 8,364,000 /-
+        </p>
+      </div>
+
+  </center>
+
+  <center>
+
+    <!--TAB 4 Images-->
+    <div class="tab-content" id="tab4">
+      <div class="car-info">
+        <a href="https://www.hyundai-nishat.com/h100/"><img src="assets/porter-mega-img.webp" alt="Image 5"></a>
+        <p><b>PORTERH-100 </b> <br>
+          FromPKR 3,789,000 /-</p>
+      </div>
+  </center>
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function changeTab(tabIndex) {
+      const tabs = document.querySelectorAll('.tab');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => tab.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      tabs[tabIndex].classList.add('active');
+      tabContents[tabIndex].classList.add('active');
+    }
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
